@@ -15,7 +15,8 @@
 /* -----------------------------CSS cho phần Header (phần đầu trang web) -----------------------------------*/
 #header{
     width: 100%;
-    height: 9vh;
+    height: 8vh;
+    min-height: 50px;
     /* background-color: #d4d4d8; */
     background-color: #c3cfe2;
     background-image: linear-gradient(0deg, #f5f7fa 0%, #c3cfe2 50%);
@@ -24,6 +25,7 @@
     /* box-shadow: 0 2px 2px 0px #d4d4d8; */
     position: fixed;
     top: 0;
+    z-index: 100;
 }
 #header .logo{
     width: 25%;
@@ -36,7 +38,7 @@
     text-transform: uppercase;
     font-family: 'Black Ops One', system-ui;
     white-space: nowrap;
-    padding: 1rem;
+    padding: 10px;
 }
 .nav-link{
     width: 75%;
@@ -62,13 +64,13 @@
     text-decoration: underline;
 }
 .theme{
-    padding: 1rem;
+    padding: 10px;
     display: none;
 }
 /* -----------------------------CSS cho phần Main (phần thân trang web) -----------------------------------*/
 #main{
 
-    margin-top: 9vh;
+    margin-top: 8vh;
     width: 100%;
     height: auto;
     /* background-color: #e4e4e7; */
@@ -80,6 +82,7 @@
     padding: 4vh 0;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     text-align: center;
     /* flex-wrap: wrap; */
 
@@ -288,8 +291,8 @@
 
 .scroll-top a {
     position: fixed;
-    right: 1em;
-    bottom: 1em;
+    right: 0.5em;
+    bottom: 0.5em;
     display: inline-block;
     text-align: center;
     font-size: 28px;
@@ -317,7 +320,7 @@
       animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
     }
   }
-#about{
+#about,#skills{
     display: block;
   }
 /* -----------------------------CSS cho phần Footer (phần cuối trang web) ---------------------------------*/
@@ -361,10 +364,7 @@
     .content-home h1{
         font-size: 5vw;
     }
-    .content-home p{
-        font-size: 0.8em;
-    }
-    .content-about p{
+    p{
         font-size: 0.8em;
     }
     .my-avatar img{
