@@ -16,10 +16,10 @@
 #header{
     width: 100%;
     height: 75px;
-    background-color: #f3f4f6;
+    background-color: #d4d4d8;
     display: flex;
     align-items: center;
-    box-shadow: 0 4px 4px 0px #d1d5db;
+    box-shadow: 0 4px 4px 0px #a1a1aa;
 }
 #header .logo{
     width: 25%;
@@ -27,7 +27,7 @@
 }
 #header .logo > a{
     font-size: 1.3rem;
-    color: #a3e635;
+    color: #8b5cf6;
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Black Ops One', system-ui;
@@ -53,36 +53,44 @@
     font-weight: 600;
 }
 .nav-link ul li a:hover{
-    color: greenyellow;
+    color: #4ade80;
 }
 /* -----------------------------CSS cho phần Main (phần thân trang web) -----------------------------------*/
 #main{
     margin-top: 4px;
     width: 100%;
     height: 100vh;
-    background-color: #f9fafb;
+    background-color: #e4e4e7;
 }
 #home{
     padding: 4vh 0;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    text-align: center;
+    /* flex-wrap: wrap; */
 
 }
 .content-home{
-
+    width: 55%;
+    /* text-align: center; */
+    text-align: left;
+    padding-left: 10%;
+}
+.content-home h1{
+    font-size: 3em;
 }
 .my-avatar{
-
+    width: 45%;
 }
 .my-avatar img{
-    width: 300px;
+    width: 20em;
     border: 6px solid #e7e5e4;
     border-radius: 23% 39% 15% 50% / 23% 35% 35% 43%  ;
     animation: morph 5s ease-in-out infinite;
+    outline: 3px solid #67e8f9;
 }
 .my-avatar img:hover{
-    border: 6px solid #a3e635
+    border: 6px solid #d9f99d
 }
 @keyframes morph {
     0% {border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;}
@@ -127,7 +135,18 @@
     .nav-link{
         display: none;
     }
-
+    .content-home{
+        padding-left: 4%;
+    }
+    .content-home h1{
+        font-size: 5vw;
+    }
+    .content-home p{
+        font-size: 0.8em;
+    }
+    .my-avatar img{
+        width: 40vw;
+    }
 }
 /* Màn hình Mobile */
 @media screen and (max-width : 534px){
