@@ -322,6 +322,17 @@
 #about,#skills{
     display: block;
   }
+#about{
+
+}
+.content-about{
+  width: 50%;
+  /* text-align: center; */
+  margin: 0 auto;
+}
+/* .content-about p{
+  margin-left: auto;
+} */
 /* -----------------------------CSS cho phần Footer (phần cuối trang web) ---------------------------------*/
 #footer{
 
