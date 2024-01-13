@@ -364,8 +364,8 @@
     .content-home h1{
         font-size: 5vw;
     }
-    p{
-        font-size: 0.8em;
+    #main p{
+        font-size: 0.8rem;
     }
     .my-avatar img{
         width: 40vw;
