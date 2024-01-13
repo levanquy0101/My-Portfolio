@@ -79,8 +79,12 @@
 }
 #main p{
   font-size: 1rem;
+  text-size-adjust: none;
 }
-#home, .layout-all{
+#home{
+
+}
+.layout-all{
     padding: 4vh 0;
     display: flex;
     justify-content: space-around;
