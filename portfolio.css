@@ -31,15 +31,37 @@
     width: 25%;
     text-align: center;
 }
+@property --k {
+	syntax: '<number>';
+	initial-value: 0;
+	inherits: false
+}
 #header .logo > a{
-    font-size: 1.3rem;
-    color: #8b5cf6;
-    font-weight: bold;
+    /* color: #8b5cf6; */
+    /* font-weight: bold; */
     text-transform: uppercase;
     font-family: 'Black Ops One', system-ui;
     white-space: nowrap;
     padding: 10px;
+    --k: 0;
+    place-self: center;
+    background: 
+      linear-gradient(90deg, 
+          hsl(calc(var(--k)*1turn), 95%, 65%), 
+          hsl(calc(var(--k)*1turn + 90deg), 95%, 65%));
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
+    font: 900 clamp(.875em, 7.25vw, 5em) arial black, sans-serif;
+    filter: url(#f);
+    text-align: center;
+    text-transform: uppercase;
+    animation: k 4s linear infinite;
+    font-size: 1.3rem;
 }
+@keyframes k { to { --k: 1 } }
+
+
 .nav-link{
     width: 75%;
     text-align: center;
@@ -100,7 +122,7 @@
     padding-left: 10%;
 }
 .content-home h2{
-    font-size: 2.2em;
+    font-size: 1.8em;
     color: #0f0;
 }
 
@@ -217,14 +239,14 @@ button span::before {
   
 
 .my-avatar{
-    padding: 10px;
+    padding: 15px;
     width: 50%;
 }
 .my-avatar img{
     width: 20em;
     border: 2px solid #e7e5e4;
     border-radius: 23% 39% 15% 50% / 23% 35% 35% 43%  ;
-    animation: morph 5s ease-in-out infinite;
+    animation: morph 8s ease-in-out infinite;
     outline: 3px solid #67e8f9;
 }
 /* .my-avatar img:hover{
